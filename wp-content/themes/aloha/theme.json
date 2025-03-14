@@ -1,0 +1,245 @@
+{
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"custom": true,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#FFFAF5",
+					"name": "Blanc cassé texte",
+					"slug": "blanctxt"
+				},
+				{
+					"color": "#FFA647",
+					"name": "Orange sombre",
+					"slug": "orange"
+				},
+				{
+					"color": "#171614",
+					"name": "Fond gris",
+					"slug": "gris"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Blanc",
+					"slug": "blanc"
+				},
+				{
+					"color": "#000000",
+					"name": "Noir",
+					"slug": "noir"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "540px",
+			"wideSize": "1320px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/lato/Lato-Regular.woff"
+							]
+						}
+					],
+					"fontFamily": "Lato, sans-serif",
+					"name": "Lato",
+					"slug": "lato"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Teachers",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/teachers/Teachers-Medium.woff"
+							]
+						}
+					],
+					"fontFamily": "Teachers, sans-serif",
+					"name": "Teachers",
+					"slug": "teachers"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": true,
+					"name": "Petit",
+					"size": "0.8rem",
+					"slug": "petit"
+				},
+				{
+					"fluid": true,
+					"name": "Paragraphe",
+					"size": "1rem",
+					"slug": "paragraphe"
+				},
+				{
+					"fluid": true,
+					"name": "Moyen",
+					"size": "1.25rem",
+					"slug": "moyen"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"bottom": {
+						"style": "solid",
+						"width": "2px"
+					},
+					"left": {
+						"style": "solid",
+						"width": "2px"
+					},
+					"radius": "0px",
+					"right": {
+						"style": "solid",
+						"width": "2px"
+					},
+					"top": {
+						"style": "solid",
+						"width": "2px"
+					},
+					"width": "2px"
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--40)",
+						"left": "var(--wp--preset--spacing--50)",
+						"right": "var(--wp--preset--spacing--50)",
+						"top": "var(--wp--preset--spacing--40)"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--gris)",
+			"text": "var(--wp--preset--color--blanctxt)"
+		},
+		"css": ".contain img{\nobject-fit: contain!important;\n}",
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--gris)",
+					"text": "var(--wp--preset--color--blanctxt)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)",
+					"fontSize": "10rem",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)",
+					"fontSize": "4rem",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)",
+					"fontSize": "3rem",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lato)",
+					"fontSize": "1.2rem",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "1.56rem"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "1.25rem"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--blanctxt)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--teachers)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--blanctxt)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "0px",
+			"padding": {
+				"bottom": "0px",
+				"left": "20px",
+				"right": "20px",
+				"top": "0px"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--lato)",
+			"fontSize": "var(--wp--preset--font-size--paragraphe)",
+			"lineHeight": "1"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+}

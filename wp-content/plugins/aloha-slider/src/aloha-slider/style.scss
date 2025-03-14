@@ -1,0 +1,28 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .aloha-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.aloha-slider-track {
+    display: flex;
+    width: 200%;
+    animation: slide 10s linear infinite;
+}
+
+.aloha-slide {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+}

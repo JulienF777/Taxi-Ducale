@@ -1,0 +1,195 @@
+/*
+Theme Name: Aloha
+Theme URI: 
+Author: Alowa Studio
+Author URI: 
+Description: Un thème d'Alowa Studio
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 5.7
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aloha
+Tags: 
+*/
+
+/** prevents the slider from overflowing the page */
+body {
+    overflow-x: hidden;
+    cursor: default;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+/** smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/** header on top of the page */
+header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    left: auto;
+    right: auto;
+    transition: width 0.5s ease;
+}
+.headerGroup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** LANDING PAGE */
+/** underlining word in title */
+.double-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Espace pour les traits */
+}
+
+.double-underline::before,
+.double-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 5px;
+  background-color: #FFA647;
+  
+}
+
+.double-underline::before {
+  bottom: 0;
+  transform: translateX(-50%) rotate(-1deg);
+}
+
+.double-underline::after {
+  bottom: -5px;
+  transform: translateX(-40%) rotate(-3deg);
+}
+/** make the main title h1 not flash */
+.appearAnimation {
+  visibility: hidden; /* Cache l'élément sans casser la mise en page */
+}
+
+/** SECTION 2 DESCRIPTION */
+.textSeparator{
+  width: 100%;
+}
+
+
+/** SECTION 3 IMAGES */
+.imageCover{
+  width: 100%;
+}
+/** smaller underline */
+.double-underline-small {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Espace pour les traits */
+}
+
+.double-underline-small::before,
+.double-underline-small::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 5px;
+  background-color: #FFA647;
+  
+}
+
+.double-underline-small::before {
+  bottom: 0;
+  transform: translateX(-50%) rotate(-3deg);
+}
+
+.double-underline-small::after {
+  bottom: -5px;
+  transform: translateX(-40%) rotate(-1deg);
+}
+/** translate title underlined rectangles to the left to touch the border of the image */
+.wp-block-cover__inner-container.is-layout-flow.wp-block-cover-is-layout-flow {
+  transform: translate(-16px, 0px);
+}
+
+/** SECTION 6 FAQ */
+.wp-block-details{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wp-block-details p {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.wp-block-details[open] p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#cls-2{
+  transform: translateX(-50%);
+}
+
+/** responsive for the description 1 bellow first image.*/
+@media only screen and (max-width: 945px) {
+    .flexwrap{
+        flex-wrap: wrap;
+    }
+    .wp-container-content-2 {
+        flex-basis: 100%;
+    }
+    .wp-container-content-3 {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* prevent text from the sticky gallery to go above the header */
+.wp-container-4{
+  z-index: 0;
+}
+
+/* footer */
+
+.footerGroup{
+  position: relative;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.footerStickyArea{
+  position: relative;
+  height: 200vh;
+  top: -100vh;
+}
+.footerSticky{
+  position: sticky;
+  height: 100vh;
+  top: 0;
+}
+
+
+
+  @media screen and (min-width: 945px) {
+    .headerGroup.scrolled header{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .headerGroup.scrolled header{
+        width: 50%;
+    }
+}
+  
+
