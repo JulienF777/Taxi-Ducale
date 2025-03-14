@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wpdev-double-image {
+	position: relative;
+	img {
+		position: relative;
+		height: auto;
+ 	}
+	.flex{
+		display: flex;
+		animation: slide 10s linear infinite;
+		//gap between images
+		gap: 30px;
+	}
+	@keyframes slide {
+		from { transform: translateX(0%); }
+		//calc is used to add gap between images
+		to { transform: translateX(calc(-100% - 30px)); }
+	}
+}

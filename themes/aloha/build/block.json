@@ -1,0 +1,24 @@
+{
+  "name": "aloha/faq-item",
+  "title": "FAQ Item",
+  "category": "common",
+  "icon": "editor-help",
+  "description": "A custom FAQ item block with animation",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "aloha",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "question": {
+      "type": "string",
+      "default": ""
+    },
+    "answer": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
